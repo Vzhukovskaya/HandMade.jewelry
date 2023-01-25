@@ -63,18 +63,18 @@
             <div class="cost-calc">
                 <form class="form">
                     <p class="form-text">Choose product:</p>
-                    <select class="form-select" id="">
-                        <option value="" selected disabled>Select from list</option>
-                        <option value="">Rings(35 euro)</option>
-                        <option value="">Necklases(65 euro)</option>
-                        <option value="">Bracelets(45 euro)</option>
+                    <select id="selectProduct" class="form-select">
+                        <option value="0" selected disabled>Select from list</option>
+                        <option value="35">Rings (35 euro)</option>
+                        <option value="65">Necklases (65 euro)</option>
+                        <option value="45">Bracelets (45 euro)</option>
                     </select>
                     <p class="form-text">Enter quantity:</p>
-                    <input class="form-input" type="number" value="0">
+                    <input id="quantityProduct" class="form-input" type="number" value="0">
                     <button class="link" type="button" id="btnProduct">Calculate</button>
                 </form>
                 <div id="infoProduct" class="total" style="display:none;">
-                    <p class="total-price">Total: 35 euro</p>
+                    <p class="total-price">Total: <span id="priceProduct"></span> euro</p>
                     <p class="total-info">Leave your request on email:
                         <a href="mailto:order@jewelery.de" class="total-email">order@jewelery.de</a>
                     </p>
